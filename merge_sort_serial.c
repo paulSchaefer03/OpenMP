@@ -4,11 +4,19 @@
 #include <stdbool.h>
 #include <math.h>
 
-#define N 1000000
-#define ROUNDEN 1000
+#define N 100000000
+#define RUNDEN 1
+
+
+/* #define TYP double
+#define FORMAT "%f"
+#define IST_INT 0 */
+#define TYP int
+#define FORMAT "%d" 
+#define IST_INT 1
 
 //Klassische Merge Sort(orientiert an https://www.geeksforgeeks.org/iterative-merge-sort/) Rekursiv
-void rekTeilenUndSortiern(double *A, int start, int ende) {
+void rekTeilenUndSortiern(TYP *A, int start, int ende) {
     if (start < ende) {
         int mitte = (int)round((start + ende) / 2.0);
         rekTeilenUndSortiern(A, start, mitte - 1);
@@ -17,8 +25,8 @@ void rekTeilenUndSortiern(double *A, int start, int ende) {
         int groeßeLinks = mitte - start;
         int groeßeRechts = ende - mitte + 1;
 
-        double *ALinks = (double *)malloc(groeßeLinks * sizeof(double));
-        double *ARechts = (double *)malloc(groeßeRechts * sizeof(double));
+        TYP *ALinks = (TYP *)malloc(groeßeLinks * sizeof(TYP));
+        TYP *ARechts = (TYP *)malloc(groeßeRechts * sizeof(TYP));
 
         if (ALinks == NULL || ARechts == NULL) {
             fprintf(stderr, "Speicher allocation fehlgeschlagen\n");
@@ -52,15 +60,15 @@ void rekTeilenUndSortiern(double *A, int start, int ende) {
 }
 
 //Iterative Merge Sort (orientiert an https://www.geeksforgeeks.org/iterative-merge-sort/ aber besser)
-void iterTeilenUndSortiern(double * A) {
-    double *B = (double *)malloc(N * sizeof(double));
+void iterTeilenUndSortiern(TYP * A) {
+    TYP *B = (TYP *)malloc(N * sizeof(TYP));
     if (B == NULL) {
         fprintf(stderr, "Speicherallocation fehlgeschlagen\n");
         exit(1);
     }
 
-    double *orginal = A;
-    double *zws = B;
+    TYP *orginal = A;
+    TYP *zws = B;
     for (int width = 1; width < N; width *= 2) {
         if (width == 1) {
             for (int i = 0; i + 1 < N; i += 2) {
@@ -73,7 +81,7 @@ void iterTeilenUndSortiern(double * A) {
                 }
             }
             if (N % 2 == 1) zws[N - 1] = orginal[N - 1];
-            double *temp = orginal; orginal = zws; zws = temp;
+            TYP *temp = orginal; orginal = zws; zws = temp;
             continue;
         }
 
@@ -105,7 +113,7 @@ void iterTeilenUndSortiern(double * A) {
         }
 
         // Tauschen
-        double *temp = orginal;
+        TYP *temp = orginal;
         orginal = zws;
         zws = temp;
     }
@@ -120,27 +128,33 @@ void iterTeilenUndSortiern(double * A) {
 }
 
 
-void befullenArray(double *A) {
+void befullenArray(TYP *A) {
     double start = omp_get_wtime();
     // Initialisierung des Arrays mit Zufallszahlen
     srand(start);
     for (int i = 0; i < N; i++) {
-        A[i] = ((double)rand() / RAND_MAX) * (rand() % 2 == 0 ? 1 : -1);
+
+#if IST_INT
+        A[i] = (rand() % 20000001) - 10000000;
+#else
+        A[i] = ((rand() % 20000001) - 10000000) + ((double)rand() / RAND_MAX) * (rand() % 2 == 0 ? 1 : -1);
+#endif
+        //A[i] = N - i;
     }
 
     double ende = omp_get_wtime();
-    printf("Zeit zur Initialisierung des Arrays: %f Sekunden\n", ende - start);
+    //printf("Zeit zur Initialisierung des Arrays: %f Sekunden\n", ende - start);
 }
 
-void ausgabeArray(double *A) {
+void ausgabeArray(TYP *A) {
     printf("Array:\n");
     for (int i = 0; i < N; i++) {
-        printf("%f ", A[i]);
+        printf(FORMAT " ", A[i]);
     }
     printf("\n");
 }
 
-bool checkSort(double *A) {
+bool checkSort(TYP *A) {
     for (int i = 0; i < N - 1; i++) {
         if (A[i] > A[i + 1]) {
             return false;
@@ -150,7 +164,7 @@ bool checkSort(double *A) {
 }
 
 int main() {
-    double *A = (double * )malloc(N * sizeof(double));
+    TYP *A = (TYP * )malloc(N * sizeof(TYP));
     double rekGlobalTime, iterGlobalTime, start, ende;
 
     if(A == NULL) {
@@ -159,13 +173,15 @@ int main() {
     }
 
     // Init Array
-    for(int i = 0; i < ROUNDEN; i++) {
+    for(int i = 0; i < RUNDEN; i++) {
         befullenArray(A);
+        //ausgabeArray(A);
         start = omp_get_wtime();
         rekTeilenUndSortiern(A, 0, (N-1));
         ende = omp_get_wtime();
+        //ausgabeArray(A);
         rekGlobalTime += (ende - start);
-        printf("[REKURSIV] Zeit zur Sortierung des Arrays: %f Sekunden\n", ende - start);
+        //printf("[REKURSIV] Zeit zur Sortierung des Arrays: %f Sekunden\n", ende - start);
         if(!checkSort(A)){
             fprintf(stderr, "Array ist nicht sortiert\n");
             ausgabeArray(A);
@@ -173,11 +189,13 @@ int main() {
         }
 
         befullenArray(A);
+        //ausgabeArray(A);
         start = omp_get_wtime();
         iterTeilenUndSortiern(A);
         ende = omp_get_wtime();
+        //ausgabeArray(A);
         iterGlobalTime += (ende - start);
-        printf("[ITERATIV] Zeit zur Sortierung des Arrays: %f Sekunden\n", ende - start);
+        //printf("[ITERATIV] Zeit zur Sortierung des Arrays: %f Sekunden\n", ende - start);
         if(!checkSort(A)){
             fprintf(stderr, "Array ist nicht sortiert\n");
             ausgabeArray(A);
@@ -186,8 +204,8 @@ int main() {
     }
     free(A);
 
-    printf("Durchschnittliche Zeit für rekursive Sortierung: %f Sekunden\n", rekGlobalTime / ROUNDEN);
-    printf("Durchschnittliche Zeit für iterative Sortierung: %f Sekunden\n", iterGlobalTime / ROUNDEN);
+    printf("Durchschnittliche Zeit für rekursive Sortierung mit %d Elementen in %d Runden mit %s Array: %f Sekunden\n", N, RUNDEN, IST_INT ? "int" : "double", rekGlobalTime / RUNDEN);
+    printf("Durchschnittliche Zeit für iterative Sortierung mit %d Elementen in %d Runden mit %s Array: %f Sekunden\n", N, RUNDEN, IST_INT ? "int" : "double", iterGlobalTime / RUNDEN);
 
     return 0;
 }

@@ -3,8 +3,8 @@
 #include <omp.h>
 
 #define N 1000000000
-#define NUM_THREADS 12
-#define ANZ_RUNDEN 1000
+#define NUM_THREADS 8
+#define ANZ_RUNDEN 1
 
 int main() {
     double global_zeit_reduce = 0.0;
