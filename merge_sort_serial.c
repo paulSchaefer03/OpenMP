@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <omp.h>
+#include <time.h>
 #include <stdbool.h>
 #include <math.h>
 
@@ -129,7 +129,7 @@ void iterTeilenUndSortiern(TYP * A) {
 
 
 void befullenArray(TYP *A) {
-    double start = omp_get_wtime();
+    double start = (double)clock() / CLOCKS_PER_SEC;
     // Initialisierung des Arrays mit Zufallszahlen
     srand(start);
     for (int i = 0; i < N; i++) {
@@ -142,7 +142,7 @@ void befullenArray(TYP *A) {
         //A[i] = N - i;
     }
 
-    double ende = omp_get_wtime();
+    double ende = (double)clock() / CLOCKS_PER_SEC;
     //printf("Zeit zur Initialisierung des Arrays: %f Sekunden\n", ende - start);
 }
 
@@ -176,9 +176,9 @@ int main() {
     for(int i = 0; i < RUNDEN; i++) {
         befullenArray(A);
         //ausgabeArray(A);
-        start = omp_get_wtime();
+        start = (double)clock() / CLOCKS_PER_SEC;
         rekTeilenUndSortiern(A, 0, (N-1));
-        ende = omp_get_wtime();
+        ende = (double)clock() / CLOCKS_PER_SEC;
         //ausgabeArray(A);
         rekGlobalTime += (ende - start);
         //printf("[REKURSIV] Zeit zur Sortierung des Arrays: %f Sekunden\n", ende - start);
@@ -190,9 +190,9 @@ int main() {
 
         befullenArray(A);
         //ausgabeArray(A);
-        start = omp_get_wtime();
+        start = (double)clock() / CLOCKS_PER_SEC;
         iterTeilenUndSortiern(A);
-        ende = omp_get_wtime();
+        ende = (double)clock() / CLOCKS_PER_SEC;
         //ausgabeArray(A);
         iterGlobalTime += (ende - start);
         //printf("[ITERATIV] Zeit zur Sortierung des Arrays: %f Sekunden\n", ende - start);

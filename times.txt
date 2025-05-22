@@ -1,0 +1,190 @@
+
+Durchschnittliche Zeit für rekursive Sortierung mit 10 Elementen in 1000 Runden mit int Array und 12 Threads: 0.000000 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 10 Elementen in 1000 Runden mit int Array und 12 Threads: 0.000001 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 100 Elementen in 10000 Runden mit int Array und 12 Threads: 0.000003 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 100 Elementen in 10000 Runden mit int Array und 12 Threads: 0.000003 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 10000 Runden mit int Array und 12 Threads: 0.000042 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 10000 Runden mit int Array und 12 Threads: 0.000017 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 10000 Elementen in 10000 Runden mit int Array und 12 Threads: 0.000455 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 10000 Elementen in 10000 Runden mit int Array und 12 Threads: 0.000169 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 100000 Elementen in 1000 Runden mit int Array und 12 Threads: 0.002550 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 100000 Elementen in 1000 Runden mit int Array und 12 Threads: 0.001557 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 12 Threads: 0.026550 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 12 Threads: 0.016534 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 10000000 Elementen in 100 Runden mit int Array und 12 Threads: 0.286933 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 10000000 Elementen in 100 Runden mit int Array und 12 Threads: 0.176278 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 100000000 Elementen in 10 Runden mit int Array und 12 Threads: 3.289820 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 100000000 Elementen in 10 Runden mit int Array und 12 Threads: 1.794120 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 12 Threads: 34.314921 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 12 Threads: 16.089253 Sekunden
+
+
+_________________________Threads
+
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 1 Threads: 170.960499 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 1 Threads: 98.951355 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 2 Threads: 85.336520 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 2 Threads: 50.784084 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 4 Threads: 63.759923 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 4 Threads: 27.939595 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 8 Threads: 41.790717 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 8 Threads: 19.357231 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 12 Threads: 34.314921 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 12 Threads: 16.089253 Sekunden
+
+
+
+
+
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 1 Threads: 0.114446 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 1 Threads: 0.062511 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 2 Threads: 0.059933 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 2 Threads: 0.033718 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 4 Threads: 0.047867 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 4 Threads: 0.020880 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 8 Threads: 0.031186 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 8 Threads: 0.016194 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 12 Threads: 0.026693 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 12 Threads: 0.016266 Sekunden
+
+
+
+
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 10000 Runden mit int Array und 1 Threads: 0.000042 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 10000 Runden mit int Array und 1 Threads: 0.000017 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 10000 Runden mit int Array und 2 Threads: 0.000042 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 10000 Runden mit int Array und 2 Threads: 0.000017 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 10000 Runden mit int Array und 4 Threads: 0.000042 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 10000 Runden mit int Array und 4 Threads: 0.000017 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 10000 Runden mit int Array und 8 Threads: 0.000042 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 10000 Runden mit int Array und 8 Threads: 0.000017 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 10000 Runden mit int Array und 12 Threads: 0.000042 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 10000 Runden mit int Array und 12 Threads: 0.000017 Sekunden
+
+_______________________________________________ HPC Cluster Threads
+
+urchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 1 Threads: 0.000000 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 1 Threads: 454.699630 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 2 Threads: 0.000000 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 2 Threads: 236.698780 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 4 Threads: 0.000000 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 4 Threads: 127.670579 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 8 Threads: 214.551086 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 8 Threads: 75.260393 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 16 Threads: 147.560775 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 16 Threads: 49.315524 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 32 Threads: 96.865065 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 32 Threads: 37.001763 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 64 Threads: 71.573341 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 64 Threads: 31.749562 Sekunden
+
+
+
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 1 Threads: 0.626898 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 1 Threads: 0.304920 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 2 Threads: 0.323042 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 2 Threads: 0.163545 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 4 Threads: 0.241743 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 4 Threads: 0.094943 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 8 Threads: 0.157588 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 8 Threads: 0.062912 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 16 Threads: 0.109695 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 16 Threads: 0.048794 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 32 Threads: 0.084515 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 32 Threads: 0.043671 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 64 Threads: 0.074915 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 10 Runden mit int Array und 64 Threads: 0.048254 Sekunden
+
+
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 100 Runden mit int Array und 1 Threads: 0.000374 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 100 Runden mit int Array und 1 Threads: 0.000162 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 100 Runden mit int Array und 2 Threads: 0.000374 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 100 Runden mit int Array und 2 Threads: 0.000162 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 100 Runden mit int Array und 4 Threads: 0.000374 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 100 Runden mit int Array und 4 Threads: 0.000162 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 100 Runden mit int Array und 8 Threads: 0.000374 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 100 Runden mit int Array und 8 Threads: 0.000162 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 100 Runden mit int Array und 16 Threads: 0.000374 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 100 Runden mit int Array und 16 Threads: 0.000162 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 100 Runden mit int Array und 32 Threads: 0.000374 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 100 Runden mit int Array und 32 Threads: 0.000162 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 100 Runden mit int Array und 64 Threads: 0.000374 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 100 Runden mit int Array und 64 Threads: 0.000162 Sekunden
+
+_______________________________________________ HPC Cluster Elemente
+
+
+Durchschnittliche Zeit für rekursive Sortierung mit 10 Elementen in 10000 Runden mit int Array und 64 Threads: 0.000002 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 10 Elementen in 10000 Runden mit int Array und 64 Threads: 0.000005 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 100 Elementen in 1000 Runden mit int Array und 64 Threads: 0.000032 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 100 Elementen in 1000 Runden mit int Array und 64 Threads: 0.000019 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000 Elementen in 1000 Runden mit int Array und 64 Threads: 0.000384 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000 Elementen in 1000 Runden mit int Array und 64 Threads: 0.000162 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 10000 Elementen in 100 Runden mit int Array und 64 Threads: 0.004709 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 10000 Elementen in 100 Runden mit int Array und 64 Threads: 0.002029 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 100000 Elementen in 100 Runden mit int Array und 64 Threads: 0.055802 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 100000 Elementen in 100 Runden mit int Array und 64 Threads: 0.025907 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 64 Threads: 0.072122 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000 Elementen in 100 Runden mit int Array und 64 Threads: 0.047440 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 10000000 Elementen in 100 Runden mit int Array und 64 Threads: 0.725657 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 10000000 Elementen in 100 Runden mit int Array und 64 Threads: 0.480130 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 100000000 Elementen in 10 Runden mit int Array und 64 Threads: 7.470052 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 100000000 Elementen in 10 Runden mit int Array und 64 Threads: 4.332494 Sekunden
+
+Durchschnittliche Zeit für rekursive Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 64 Threads: 71.573341 Sekunden
+Durchschnittliche Zeit für iterative Sortierung mit 1000000000 Elementen in 1 Runden mit int Array und 64 Threads: 31.749562 Sekunden
+
+
+
+
+
